@@ -1,9 +1,9 @@
 # Moab Website
 ## Welcome to Moab Creative's Website
 
-This website is designed to be the web face for the company Maob Creative. A company that specializes in creative business solutions for health care professionals and other like minded business.
+This website is designed to be the web face for the company Moab Creative. A company that specializes in creative business solutions for health care professionals and other like minded business.
 
-The offer
+They offer
 - Advertising
 - Marketing
 - SEO
