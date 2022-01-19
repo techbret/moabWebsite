@@ -1,144 +1,262 @@
 <!DOCTYPE html>
-<html lang="@@languageDirection.lang" dir="@@if(languageDirection.isRTL){rtl}">
+<html lang="en" dir="">
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Front - Multipurpose Responsive Template</title>
+  <title>Moab Creative: A Business Solution Company</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+  <link rel="shortcut icon" href="./favicon.ico">
 
   <!-- Font -->
-  <link href="@@vars.themeFont" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
-  <!-- bundlecss:vendor [@@autopath] -->
-  <link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
-  <link rel="stylesheet" href="@@autopath/node_modules/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css">
 
   <!-- CSS Front Template -->
-  <!-- bundlecss:theme [@@autopath] @@vars.version -->
-  <link rel="stylesheet" href="@@autopath/assets/css/theme.css">
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
 </head>
 
 <body>
   <!-- ========== HEADER ========== -->
-  @@include("@@autopath/partials/navbar/main-with-topbar-absolute-top-slide.html", {
-    "topbarcategory": "demos",
-    "topbarlink": "main",
-    "category": "landings",
-    "subcategory": "",
-    "link": "index.html"
-  })
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide"
+          data-hs-header-options='{
+            "fixMoment": 1000,
+            "fixEffect": "slide"
+          }'>
+ 
+
+    <div class="container">
+      <nav class="js-mega-menu navbar-nav-wrap">
+        <!-- Default Logo -->
+        <a class="navbar-brand" href="./index.html" aria-label="Front">
+          <img class="navbar-brand-logo" style="min-width: 200px;" src="./assets/svg/logos/logo.svg" alt="Logo">
+        </a>
+        <!-- End Default Logo -->
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </button>
+        <!-- End Toggler -->
+      
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-absolute-top-scroller">
+            <ul class="navbar-nav">
+              <!-- Menu -->
+              <li class="hs-has-mega-menu nav-item">
+                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link active" aria-current="page" href="#" role="button" aria-expanded="false">Home</a>
+                <div class="hs-mega-menu  w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
+                </div>
+              </li>
+              <li class="hs-has-mega-menu nav-item">
+                <a id="about" class="hs-mega-menu-invoker nav-link active" aria-current="page" href="#" role="button" aria-expanded="false">Services</a>
+                <div class="hs-mega-menu  w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
+                </div>
+              </li>
+              <li class="hs-has-mega-menu nav-item">
+                <a id="about" class="hs-mega-menu-invoker nav-link active" aria-current="page" href="#" role="button" aria-expanded="false">About</a>
+                <div class="hs-mega-menu  w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
+                </div>
+              </li>
+              <li class="hs-has-mega-menu nav-item">
+                <a id="about" class="hs-mega-menu-invoker nav-link active" aria-current="page" href="#" role="button" aria-expanded="false">Team</a>
+                <div class="hs-mega-menu  w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
+                </div>
+              </li>
+              <li class="hs-has-mega-menu nav-item">
+                <a id="about" class="hs-mega-menu-invoker nav-link active" aria-current="page" href="#" role="button" aria-expanded="false">Contact</a>
+                <div class="hs-mega-menu  w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
+                </div>
+              </li>
+              <li class="hs-has-mega-menu nav-item">
+                <a id="about" class="hs-mega-menu-invoker nav-link active" aria-current="page" href="#" role="button" aria-expanded="false">Blog</a>
+                <div class="hs-mega-menu  w-100" aria-labelledby="landingsMegaMenu" style="min-width: 30rem;">
+                </div>
+              </li>
+              <!-- End Menu -->
+
+              <!-- Button -->
+              <li class="nav-item">
+                <a class="btn btn-primary btn-transition" href="moab.com" >Buy now</a>
+              </li>
+              <!-- End Button -->
+            </ul>
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </div>
+  </header>
+
   <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero -->
-    <div class="container overflow-hidden content-space-t-4">
-      <div class="w-lg-75 text-center mx-lg-auto mb-9">
-        <h1 class="display-3 mb-4">Build as frameworks from the ground up</h1>
-        <p class="lead">Bring your idea to life in no time. The website solution for all your needs. For UX designers, entrepreneurs, product managers, marketers, and anyone.</p>
+    <div class="d-lg-flex position-relative">
+      <div class="container d-lg-flex align-items-lg-center content-space-t-3 content-space-lg-0 min-vh-lg-100">
+        <!-- Heading -->
+        <div class="w-100">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="mb-5">
+                <h1 class="display-4 mb-3">
+                  We are 
+
+                  <span class="text-primary text-highlight-warning">
+                    <span class="js-typedjs" style="color: #81A893;"
+                          data-hs-typed-options='{
+                            "strings": ["startup.", "future.", "success."],
+                            "typeSpeed": 90,
+                            "loop": true,
+                            "backSpeed": 30,
+                            "backDelay": 2500
+                          }'></span>
+                  </span>
+                </h1>
+                
+                <p class="lead">Front's feature-rich designed demo pages help you create the best possible product.</p>
+              </div>
+
+              <div class="d-grid d-sm-flex gap-3">
+                <a class="btn btn-primary btn-transition px-6" href="./page-login-simple.html">Get started</a>
+                <a class="btn btn-link" href="#">Learn more <i class="bi-chevron-right small ms-1"></i></a>
+              </div>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Title & Description -->
+
+        <!-- SVG Shape -->
+        <div class="col-lg-7 col-xl-6 d-none d-lg-block position-absolute top-0 end-0 pe-0" style="margin-top: 6.75rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1137.5 979.2">
+            <path fill="#F9FBFF" d="M565.5,957.4c81.1-7.4,155.5-49.3,202.4-115.7C840,739.8,857,570,510.7,348.3C-35.5-1.5-4.2,340.3,2.7,389
+              c0.7,4.7,1.2,9.5,1.7,14.2l29.3,321c14,154.2,150.6,267.8,304.9,253.8L565.5,957.4z"/>
+            <defs>
+              <path id="mainHeroSVG1" d="M1137.5,0H450.4l-278,279.7C22.4,430.6,24.3,675,176.8,823.5l0,0C316.9,960,537.7,968.7,688.2,843.6l449.3-373.4V0z"/>
+            </defs>
+            <clipPath id="mainHeroSVG2">
+              <use xlink:href="#mainHeroSVG1"/>
+            </clipPath>
+            <g transform="matrix(1 0 0 1 0 0)" clip-path="url(#mainHeroSVG2)">
+              <image width="750" height="750" xlink:href="./assets/img/750x750/img2.jpg" transform="matrix(1.4462 0 0 1.4448 52.8755 0)"></image>
+            </g>
+          </svg>
+        </div>
+        <!-- End SVG Shape -->
       </div>
     </div>
     <!-- End Hero -->
 
-    <!-- Hero Image -->
-    <div class="container-fluid content-space-b-2 content-space-b-lg-4">
-      <div class="d-md-none">
-        <img class="img-fluid" src="@@autopath/assets/img/mockups/img3.png" alt="Image Description">
-      </div>
-
-      <div class="d-none d-md-block">
-        <img class="img-fluid" src="@@autopath/assets/img/mockups/img2.png" alt="Image Description">
-      </div>
-    </div>
-    <!-- End Hero Image -->
-
     <!-- Card Grid -->
-    <div class="container d-none">
+    <div class="container content-space-2 content-space-t-xl-3 content-space-b-lg-3">
       <!-- Heading -->
-      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5">
         <h2>Learn to develop sites with components and design systems</h2>
       </div>
       <!-- End Heading -->
 
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0" data-aos="fade-up">
+      <div class="text-center mb-10">
+        <!-- List Checked -->
+        <ul class="list-inline list-checked list-checked-primary">
+          <li class="list-inline-item list-checked-item">Asynchronous collaboration</li>
+          <li class="list-inline-item list-checked-item">Updates and announcements</li>
+          <li class="list-inline-item list-checked-item">Training and team building</li>
+        </ul>
+        <!-- End List Checked -->
+      </div>
+
+      <div class="row mb-5 mb-md-0">
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
           <!-- Card -->
-          <a class="js-go-to card card-transition h-100" href="#!"
-             data-hs-go-to-options='{
-              "targetSelector": "#docsSection",
-              "offsetTop": 0,
-              "position": null,
-              "animationIn": false,
-              "animationOut": false
-             }'>
+          <div class="card card-sm h-100">
             <div class="p-2">
-              <img class="card-img" src="@@autopath/assets/svg/illustrations/docs-frame.svg" alt="Image Description">
+              <img class="card-img" src="./assets/img/480x220/img1.jpg" alt="Image Description">
             </div>
+
             <div class="card-body">
-              <h3 class="card-title text-inherit">Documentation</h3>
-              <p class="card-text text-body">Discover how to build and maintain coding systems using our documentation.</p>
+              <h4 class="card-title">Front App</h4>
+              <p class="card-text">Front App is an easier way to search on Android.</p>
+
+              <!-- List Pointer -->
+              <ul class="list-pointer mb-0">
+                <li class="list-pointer-item">Advanced Analytics</li>
+                <li class="list-pointer-item">Digital Marketing</li>
+                <li class="list-pointer-item">Organization</li>
+              </ul>
+              <!-- End List Pointer -->
             </div>
-            <div class="card-footer pt-0">
-              <span class="card-link">Learn more <i class="bi-chevron-right small"></i></span>
-            </div>
-          </a>
+            
+            <a class="card-footer card-link border-top" href="#">Learn more <i class="bi-chevron-right small ms-1"></i></a>
+          </div>
           <!-- End Card -->
         </div>
         <!-- End Col -->
 
-        <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
           <!-- Card -->
-          <a class="js-go-to card card-transition h-100" href="#!"
-             data-hs-go-to-options='{
-              "targetSelector": "#snippetsSection",
-              "offsetTop": 0,
-              "position": null,
-              "animationIn": false,
-              "animationOut": false
-             }'>
+          <div class="card card-sm h-100">
             <div class="p-2">
-              <img class="card-img" src="@@autopath/assets/svg/illustrations/snippets-frame.svg" alt="Image Description">
+              <img class="card-img" src="./assets/img/480x220/img2.jpg" alt="Image Description">
             </div>
+
             <div class="card-body">
-              <h3 class="card-title text-inherit">Snippets</h3>
-              <p class="card-text text-body">Start browsing our snippets pages with copy-to-clipboard snippets to match Bootstrap's level of quality.</p>
+              <h4 class="card-title">Front Chat</h4>
+              <p class="card-text">Front Chat is a new way to communicate with your team.</p>
+
+              <!-- List Pointer -->
+              <ul class="list-pointer mb-0">
+                <li class="list-pointer-item">Cost Transformation</li>
+                <li class="list-pointer-item">Customer Experience</li>
+                <li class="list-pointer-item">Mergers and Acquisitions</li>
+              </ul>
+              <!-- End List Pointer -->
             </div>
-            <div class="card-footer pt-0">
-              <span class="card-link">Start building <i class="bi-chevron-right small"></i></span>
-            </div>
-          </a>
+            
+            <a class="card-footer card-link border-top" href="#">Learn more <i class="bi-chevron-right small ms-1"></i></a>
+          </div>
           <!-- End Card -->
         </div>
         <!-- End Col -->
 
-        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-sm-6 col-lg-4">
           <!-- Card -->
-          <a class="js-go-to card card-transition h-100" href="#!"
-             data-hs-go-to-options='{
-              "targetSelector": "#pageLayoutsSection",
-              "offsetTop": 0,
-              "position": null,
-              "animationIn": false,
-              "animationOut": false
-             }'>
+          <div class="card card-sm h-100">
             <div class="p-2">
-              <img class="card-img" src="@@autopath/assets/svg/illustrations/layouts-frame.svg" alt="Image Description">
+              <img class="card-img" src="./assets/img/480x220/img3.jpg" alt="Image Description">
             </div>
+
             <div class="card-body">
-              <h3 class="card-title text-inherit">Page layouts</h3>
-              <p class="card-text text-body">Apart from 70+ HTML-pages, the theme comes with 6 ready-to-use and stand-alone demo options.</p>
+              <h4 class="card-title">Front Calendar</h4>
+              <p class="card-text">Discover an easier way to manage contacts, sales and grow lasting relationships.</p>
+
+              <!-- List Pointer -->
+              <ul class="list-pointer mb-0">
+                <li class="list-pointer-item">Enterprise Technology</li>
+                <li class="list-pointer-item">Private Equity</li>
+                <li class="list-pointer-item">Sustainability</li>
+              </ul>
+              <!-- End List Pointer -->
             </div>
-            <div class="card-footer pt-0">
-              <span class="card-link">View examples <i class="bi-chevron-right small"></i></span>
-            </div>
-          </a>
+            
+            <a class="card-footer card-link border-top" href="#">Learn more <i class="bi-chevron-right small ms-1"></i></a>
+          </div>
           <!-- End Card -->
         </div>
         <!-- End Col -->
@@ -147,493 +265,706 @@
     </div>
     <!-- End Card Grid -->
 
-    <!-- Front Demos -->
-    <div class="container">
-      <!-- Heading -->
-      <div class="w-lg-75 text-center mx-md-auto mb-md-5">
-        <h2 class="h1 lh-sm">Made for everyone, build anything with multiple pre-built demos</h2>
-      </div>
-      <!-- End Heading -->
-
-      <!-- Main Demo -->
-      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
-        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
-          <!-- Browser Device -->
-          <figure class="device-browser">
-            <div class="device-browser-header">
-              <div class="device-browser-header-btn-list">
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-              </div>
-              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
-            </div>
-
-            <div class="device-browser-frame">
-              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img7.jpg" alt="Image Description">
-            </div>
-
-            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-primary zi-n1 mb-n6 ms-n6"></div>
-          </figure>
-          <!-- End Browser Device -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-md-6">
-          <div class="pe-md-7">
-            <div class="mb-5">
-              <div class="mb-5">
-                <span class="badge border border-dark text-dark">59 Pages</span>
-              </div>
-
-              <h2 class="mb-3">Main Demo</h2>
-              <p class="fs-4">Front's main demo comes with 16 landing pages, including over 40 commonly used pages that can be combined with another 6 pre-built demos.</p>
-            </div>
-            <a class="btn btn-primary" target="_blank" href="@@autopath/landing-classic-corporate.html">Preview Main Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Main Demo -->
-
-      <!-- E-Commerce Demo -->
-      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
-        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
-          <!-- Browser Device -->
-          <figure class="device-browser">
-            <div class="device-browser-header">
-              <div class="device-browser-header-btn-list">
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-              </div>
-              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
-            </div>
-
-            <div class="device-browser-frame">
-              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img9.jpg" alt="Image Description">
-            </div>
-
-            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-danger zi-n1 mb-n6 ms-n6"></div>
-          </figure>
-          <!-- End Browser Device -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-md-6">
-          <div class="pe-md-7">
-            <div class="mb-5">
-              <div class="mb-5">
-                <span class="badge border border-dark text-dark">10 Pages</span>
-              </div>
-
-              <h2 class="mb-3">E-Commerce Demo</h2>
-              <p class="fs-4">Customize the appearance of products, lists, components, and snippets, but also cart, checkout, and other E-commerce pages.</p>
-            </div>
-            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-shop/index.html">Preview Shop Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End E-Commerce Demo -->
-
-      <!-- Jobs Demo -->
-      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
-        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
-          <!-- Browser Device -->
-          <figure class="device-browser">
-            <div class="device-browser-header">
-              <div class="device-browser-header-btn-list">
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-              </div>
-              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
-            </div>
-
-            <div class="device-browser-frame">
-              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img6.jpg" alt="Image Description">
-            </div>
-
-            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-success zi-n1 mb-n6 ms-n6"></div>
-          </figure>
-          <!-- End Browser Device -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-md-6">
-          <div class="pe-md-7">
-            <div class="mb-5">
-              <div class="mb-5">
-                <span class="badge border border-dark text-dark">9 Pages</span>
-              </div>
-
-              <h2 class="mb-3">Jobs Demo</h2>
-              <p class="fs-4">Demonstrate your job positions with more dynamic and interactive elements of Front to quickly put together a more professional looking page.</p>
-            </div>
-            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-jobs/index.html">Preview Jobs Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Jobs Demo -->
-
-      <!-- Real Estate Demo -->
-      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
-        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
-          <!-- Browser Device -->
-          <figure class="device-browser">
-            <div class="device-browser-header">
-              <div class="device-browser-header-btn-list">
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-              </div>
-              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
-            </div>
-
-            <div class="device-browser-frame">
-              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img8.jpg" alt="Image Description">
-            </div>
-
-            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-primary zi-n1 mb-n6 ms-n6"></div>
-          </figure>
-          <!-- End Browser Device -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-md-6">
-          <div class="pe-md-7">
-            <div class="mb-5">
-              <div class="mb-5">
-                <span class="badge border border-dark text-dark">5 Pages</span>
-              </div>
-
-              <h2 class="mb-3">Real Estate Demo</h2>
-              <p class="fs-4">Please your visitors with eye-catching and exciting real estate listings. Different options and settings to manage your site.</p>
-            </div>
-            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-real-estate/index.html">Preview Real Estate Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Real Estate Demo -->
-
-      <!-- Courses Demo -->
-      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
-        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
-          <!-- Browser Device -->
-          <figure class="device-browser">
-            <div class="device-browser-header">
-              <div class="device-browser-header-btn-list">
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-              </div>
-              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
-            </div>
-
-            <div class="device-browser-frame">
-              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img1.jpg" alt="Image Description">
-            </div>
-
-            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-info zi-n1 mb-n6 ms-n6"></div>
-          </figure>
-          <!-- End Browser Device -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-md-6">
-          <div class="pe-md-7">
-            <div class="mb-5">
-              <div class="mb-5">
-                <span class="badge border border-dark text-dark">4 Pages</span>
-              </div>
-
-              <h2 class="mb-3">Courses Demo</h2>
-              <p class="fs-4">Build a deep, solid understanding in education platform with Front Course demo. An online learning and teaching demo.</p>
-            </div>
-            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-course/index.html">Preview Courses Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Courses Demo -->
-
-      <!-- App Marketplace Demo -->
-      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
-        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
-          <!-- Browser Device -->
-          <figure class="device-browser">
-            <div class="device-browser-header">
-              <div class="device-browser-header-btn-list">
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-              </div>
-              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
-            </div>
-
-            <div class="device-browser-frame">
-              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img2.jpg" alt="Image Description">
-            </div>
-
-            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-warning zi-n1 mb-n6 ms-n6"></div>
-          </figure>
-          <!-- End Browser Device -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-md-6">
-          <div class="pe-md-7">
-            <div class="mb-5">
-              <div class="mb-5">
-                <span class="badge border border-dark text-dark">4 Pages</span>
-              </div>
-
-              <h2 class="mb-3">App Marketplace Demo</h2>
-              <p class="fs-4">Create and run your online business with Front's App Marketplace demo. Easy to expand and designed to work together.</p>
-            </div>
-            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-app-marketplace/index.html">Preview App Marketplace Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End App Marketplace Demo -->
-
-      <!-- Help Desk Demo -->
-      <div class="row align-items-md-center content-space-2 content-space-b-lg-2">
-        <div class="col-md-6 order-md-2 mb-10 mb-md-0">
-          <!-- Browser Device -->
-          <figure class="device-browser">
-            <div class="device-browser-header">
-              <div class="device-browser-header-btn-list">
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-                <span class="device-browser-header-btn-list-btn"></span>
-              </div>
-              <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
-            </div>
-
-            <div class="device-browser-frame">
-              <img class="device-browser-img" src="@@autopath/assets/img/1618x1010/img3.jpg" alt="Image Description">
-            </div>
-
-            <div class="position-absolute bottom-0 start-0 w-100 h-100 bg-soft-secondary zi-n1 mb-n6 ms-n6"></div>
-          </figure>
-          <!-- End Browser Device -->
-        </div>
-        <!-- End Col -->
-
-        <div class="col-md-6">
-          <div class="pe-md-7">
-            <div class="mb-5">
-              <div class="mb-5">
-                <span class="badge border border-dark text-dark">3 Pages</span>
-              </div>
-
-              <h2 class="mb-3">Help Desk</h2>
-              <p class="fs-4">Find all the answers you are looking for in our extensive knowledge base demo option.</p>
-            </div>
-            <a class="btn btn-primary" target="_blank" href="@@autopath/demo-help-desk/index.html">Preview Help Desk Demo <i class="bi-box-arrow-up-right ms-2"></i></a>
-          </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Help Desk Demo -->
-    </div>
-    <!-- End Front Demos -->
-
-    <!-- Documentation -->
-    <div class="content-space-t-2">
-      <div class="container">
-        <div class="bg-light p-4 p-sm-10">
-          <!-- Heading -->
-          <div class="w-md-75 text-center mx-md-auto mb-5 mb-md-9">
-            <h2>Documentation</h2>
-            <p class="fs-4">Get started with Front - Multipurpose Responsive Template for building responsive, mobile-first sites, with Bootstrap and a template starter page.</p>
-            <a href="@@autopath/documentation/index.html" class="btn btn-primary">Browse Documentation</a>
-          </div>
-          <!-- End Heading -->
-
-          <img class="img-fluid rounded-2 shadow-xl" src="@@autopath/assets/svg/illustrations/docs-main-page.svg" alt="Image Description">
-        </div>
-      </div>
-    </div>
-    <!-- End Documentation -->
-
-    <!-- Snippets -->
-    <div class="container content-space-t-2">
-      <div class="p-4 p-sm-10">
+    <!-- Features -->
+    <div class="position-relative bg-light rounded-2 mx-3 mx-lg-10">
+      <div class="container content-space-2 content-space-lg-3">
         <!-- Heading -->
-        <div class="w-md-75 text-center mx-md-auto mb-5 mb-md-9">
-          <h2>Snippets</h2>
-          <p class="fs-4">Mix and match content and features from different demos. Copy-paste components that suit you the best. Combine features from different demos!</p>
-          <a class="btn btn-primary" href="@@autopath/snippets/index.html">Browse Snippets</a>
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5">
+          <h2>Wow your audience from the first second</h2>
+          <p>The powerful and flexible theme for all kinds of businesses</p>
         </div>
         <!-- End Heading -->
 
-        <img class="img-fluid rounded-2 shadow-xl" src="@@autopath/assets/svg/illustrations/snippets-main-page.svg" alt="Image Description">
-      </div>
-    </div>
-    <!-- End Snippets -->
-
-    <!-- Tools -->
-    <div class="position-relative gradient-y-gray">
-      <div class="container content-space-2 content-space-b-sm-3 content-space-b-lg-4">
-        <!-- Heading -->
-        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-          <h2>Build tools and full documention</h2>
-          <p>Components, plugins, and build tools are all thoroughly documented with live examples and markup for easier use and customization.</p>
+        <div class="text-center mb-10">
+          <!-- List Checked -->
+          <ul class="list-inline list-checked list-checked-primary">
+            <li class="list-inline-item list-checked-item">Responsive</li>
+            <li class="list-inline-item list-checked-item">5-star support</li>
+            <li class="list-inline-item list-checked-item">Constant updates</li>
+          </ul>
+          <!-- End List Checked -->
         </div>
-        <!-- End Heading -->
 
-        <div class="w-md-75 w-lg-50 mx-md-auto mb-5 mb-md-9">
-          <!-- Code Sample -->
-          <div class="card bg-dark mb-5">
-            <div class="card-body font-monospace">
-              <div class="d-grid gap-6">
-                <span class="d-grid gap-1">
-                  <span class="d-block text-white-70">&gt; $ npm install</span>
-                  <span class="d-block text-success">Everything installed!</span>
-                </span>
-                <span class="d-grid gap-1">
-                  <span class="d-block text-white-70">&gt; $ gulp</span>
-                  <span class="d-block text-success">scss watching</span>
-                  <span class="d-block text-success">LiveReload started</span>
-                  <span class="d-block text-success">Opening localhost:3000</span>
-                </span>
-                <span class="d-grid gap-1">
-                  <span class="d-block text-white-70">&gt; $ that's it?!</span>
-                  <span class="d-block text-success">Yup, that's it.</span>
-                </span>
+        <div class="row">
+          <div class="col-lg-7 mb-9 mb-lg-0">
+            <div class="pe-lg-6">
+              <!-- Browser Device -->
+              <figure class="device-browser">
+                <div class="device-browser-header">
+                  <div class="device-browser-header-btn-list">
+                    <span class="device-browser-header-btn-list-btn"></span>
+                    <span class="device-browser-header-btn-list-btn"></span>
+                    <span class="device-browser-header-btn-list-btn"></span>
+                  </div>
+                  <div class="device-browser-header-browser-bar">www.htmlstream.com/front/</div>
+                </div>
+
+                <div class="device-browser-frame">
+                  <img class="device-browser-img" src="./assets/img/1618x1010/img6.jpg" alt="Image Description">
+                </div>
+              </figure>
+              <!-- End Browser Device -->
+            </div>
+          </div>
+          <!-- End Col -->
+
+          <div class="col-lg-5">
+            <!-- Heading -->
+            <div class="mb-4">
+              <h2>Collaborative tools to design user experience</h2>
+              <p>We help businesses bring ideas to life in the digital world, by designing and implementing the technology tools that they need to win.</p>
+            </div>
+            <!-- End Heading -->
+            
+            <!-- List Checked -->
+            <ul class="list-checked list-checked-primary mb-5">
+              <li class="list-checked-item">Less routine – more creativity</li>
+              <li class="list-checked-item">Hundreds of thousands saved</li>
+              <li class="list-checked-item">Scale budgets efficiently</li>
+            </ul>
+            <!-- End List Checked -->
+
+            <a class="btn btn-primary" href="#">Get started</a>
+
+            <hr class="my-5">
+
+            <span class="d-block">Trusted by leading companies</span>
+
+            <div class="row">
+              <div class="col py-3">
+                <img class="avatar avatar-4x3" src="./assets/svg/brands/fitbit-dark.svg" alt="Logo">
               </div>
+              <!-- End Col -->
+
+              <div class="col py-3">
+                <img class="avatar avatar-4x3" src="./assets/svg/brands/forbes-dark.svg" alt="Logo">
+              </div>
+              <!-- End Col -->
+
+              <div class="col py-3">
+                <img class="avatar avatar-4x3" src="./assets/svg/brands/mailchimp-dark.svg" alt="Logo">
+              </div>
+              <!-- End Col -->
+
+              <div class="col py-3">
+                <img class="avatar avatar-4x3" src="./assets/svg/brands/layar-dark.svg" alt="Logo">
+              </div>
+              <!-- End Col -->
             </div>
+            <!-- End Row -->
           </div>
-          <!-- End Code Sample -->
-
-          <div class="text-center mb-7">
-            <p>Not comfortable diving that deep? No worries, you just use the compiled CSS and examples pages! <a class="link" href="@@autopath/documentation/gulp.html">Learn more <i class="bi-chevron-right small"></i></a></p>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-auto col-sm-3 col-sm py-3">
-              <img class="avatar avatar-xl avatar-4x3" src="@@autopath/assets/svg/brands/bootstrap-gray.svg" alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-auto col-sm-3 col-sm py-3">
-              <img class="avatar avatar-xl avatar-4x3" src="@@autopath/assets/svg/brands/sass-gray.svg" alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-auto col-sm-3 col-sm py-3">
-              <img class="avatar avatar-xl avatar-4x3" src="@@autopath/assets/svg/brands/gulp-gray.svg" alt="Logo">
-            </div>
-            <!-- End Col -->
-
-            <div class="col-auto col-sm-3 col-sm py-3">
-              <img class="avatar avatar-xl avatar-4x3" src="@@autopath/assets/svg/brands/npm-gray.svg" alt="Logo">
-            </div>
-            <!-- End Col -->
-          </div>
-          <!-- End Row -->
+          <!-- End Col -->
         </div>
-
-        <div class="d-grid mx-auto" style="max-width: 15rem;">
-          <a class="btn btn-primary btn-transition" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">Get a license for $49</a>
-        </div>
+        <!-- End Row -->
       </div>
-
-      <!-- Shape -->
-      <div class="shape shape-bottom zi-1" style="margin-bottom: -.125rem">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
-          <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
-        </svg>
-      </div>
-      <!-- End Shape -->
     </div>
-    <!-- End Tools -->
+    <!-- End Features -->
 
-    <!-- Feature Stats -->
-    <div class="container content-space-t-1 content-space-t-md-2 content-space-b-2 content-space-b-lg-3">
-      <div class="row col-md-divider col-divider-rotated">
-        <div class="col-md-4">
-          <div data-aos="fade-up" data-aos-delay="100">
-            <!-- Stats -->
-            <div class="text-center px-md-3 px-lg-8">
-              <span class="svg-icon svg-icon-lg mb-3">
-                @@include("@@autopath/assets/svg/illustrations/stars.svg")
-              </span>
-              <p class="mb-0"><span class="text-dark fw-semi-bold">4.80 out of 5 starts</span> from 81 reviews</p>
-            </div>
-            <!-- End Stats -->
-          </div>
+    <!-- Testimonials -->
+    <div class="container content-space-2 content-space-lg-3">
+      <div class="row align-items-md-center">
+        <div class="col-md-5 d-none d-md-block">
+          <img class="img-fluid rounded-2" src="./assets/img/400x500/img31.jpg" alt="Image Description">
         </div>
         <!-- End Col -->
 
-        <div class="col-md-4">
-          <div data-aos="fade-up">
-            <!-- Stats -->
-            <div class="text-center px-md-3 px-lg-8">
-              <span class="svg-icon svg-icon-lg mb-3">
-                @@include("@@autopath/assets/svg/illustrations/avatar-group.svg")
-              </span>
-              <p class="mb-0">Over <span class="text-dark fw-semi-bold">1k+</span> support questions have been closed</p>
+        <div class="col-md-7">
+          <!-- Blockquote -->
+          <figure class="pe-md-7">
+            <div class="mb-4">
+              <img class="avatar avatar-xl avatar-4x3" src="./assets/svg/brands/mailchimp-primary.svg" alt="Image Description">
             </div>
-            <!-- End Stats -->
-          </div>
-        </div>
-        <!-- End Col -->
 
-        <div class="col-md-4">
-          <div data-aos="fade-up" data-aos-delay="100">
-            <!-- Stats -->
-            <div class="text-center px-md-3 px-lg-8">
-              <span class="svg-icon svg-icon-lg mb-3">
-                @@include("@@autopath/assets/svg/illustrations/document-sheet.svg")
-              </span>
-              <p class="mb-0"><span class="text-dark fw-semi-bold">5k+</span> Front copies have been purchased</p>
-            </div>
-            <!-- End Stats -->
-          </div>
+            <blockquote class="blockquote blockquote-lg">" I'm absolutely floored by the level of care and attention to detail the team at Htmlstream have put into this theme and for one can guarantee that I will be a return customer. "</blockquote>
+            
+            <figcaption class="blockquote-footer">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0 d-md-none">
+                  <img class="avatar avatar-circle" src="./assets/img/160x160/img4.jpg" alt="Image Description">
+                </div>
+                <div class="flex-grow-1 ms-3 ms-md-0">
+                  Lewis
+                  <span class="blockquote-footer-source">Senior Director of Operations at Mailchimp</span>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+          <!-- End Blockquote -->
         </div>
         <!-- End Col -->
       </div>
       <!-- End Row -->
     </div>
-    <!-- End Feature Stats -->
+    <!-- End Testimonials -->
+
+    <!-- Stats -->
+    <div class="bg-light rounded-2 mx-3 mx-lg-10">
+      <div class="container content-space-2">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-4 mb-7 mb-md-0">
+            <!-- Stats -->
+            <div class="text-center">
+              <h2 class="display-4"><i class="bi-arrow-down-short text-danger"></i>47%</h2>
+              <p class="mb-0">fewer meetings across<br>organizations</p>
+            </div>
+            <!-- End Stats -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4 mb-7 mb-md-0">
+            <!-- Stats -->
+            <div class="text-center">
+              <h2 class="display-4"><i class="bi-arrow-up-short text-success"></i>23%</h2>
+              <p class="mb-0">increase in traffic on<br>webpages with Looms</p>
+            </div>
+            <!-- End Stats -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-md-4">
+            <!-- Stats -->
+            <div class="text-center">
+              <h2 class="display-4"><i class="bi-arrow-up-short text-success"></i>9.3%</h2>
+              <p class="mb-0">boost in reply rates across<br>sales outreach</p>
+            </div>
+            <!-- End Stats -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+    </div>
+    <!-- End Stats -->
+
+    <!-- Card Grid -->
+    <div class="container content-space-2 content-space-lg-3">
+      <!-- Heading -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5">
+        <h2>Discover more</h2>
+      </div>
+      <!-- End Heading -->
+
+      <div class="overflow-hidden">
+        <div class="row gx-lg-7">
+          <div class="col-sm-6 col-lg-4 mb-5">
+            <!-- Card -->
+            <a class="card card-flush h-100" href="#" data-aos="fade-up">
+              <img class="card-img" src="./assets/img/480x320/img33.jpg" alt="Image Description">
+              <div class="card-body">
+                <span class="card-subtitle text-body">Read the blog</span>
+                <h4 class="card-title text-inherit">Have a meaningful impact</h4>
+                <p class="card-text text-body">Opportunities to Front who have proven to be good at executing on them.</p>
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-lg-4 mb-5">
+            <!-- Card -->
+            <a class="card card-flush h-100" href="#" data-aos="fade-up" data-aos-delay="150">
+              <img class="card-img" src="./assets/img/480x320/img34.jpg" alt="Image Description">
+              <div class="card-body">
+                <span class="card-subtitle text-body">Read the blog</span>
+                <h4 class="card-title text-inherit">Documentation</h4>
+                <p class="card-text text-body">Whether you're a startup or a global enterprise, learn how to integrate with Front.</p>
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-lg-4 mb-5">
+            <!-- Card -->
+            <a class="card card-flush h-100" href="#" data-aos="fade-up" data-aos-delay="200">
+              <img class="card-img" src="./assets/img/480x320/img35.jpg" alt="Image Description">
+              <div class="card-body">
+                <span class="card-subtitle text-body">Learn about other solutions</span>
+                <h4 class="card-title text-inherit">Explore the Snippets tool</h4>
+                <p class="card-text text-body">Quickly Front sample components, copy-paste codes.</p>
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+
+      <!-- Card Info -->
+      <div class="text-center">
+        <div class="card card-info-link card-sm">
+          <div class="card-body">
+            Want to read more? <a class="card-link ms-2" href="#">Go here <span class="bi-chevron-right small ms-1"></span></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Card Info -->
+    </div>
+    <!-- End Card Grid -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  @@include("@@autopath/partials/footer/main-dark.html")
+  <footer class="bg-light">
+    <div class="container pb-1 pb-lg-7">
+      <div class="row content-space-t-2">
+        <div class="col-lg-3 mb-7 mb-lg-0">
+          <!-- Logo -->
+          <div class="mb-5">
+            <a class="navbar-brand" href="./index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Image Description">
+            </a>
+          </div>
+          <!-- End Logo -->
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1">
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-geo-alt-fill me-1"></i> 153 Williamson Plaza, Maggieberg</a></li>
+            <li><a class="link-sm link-secondary" href="tel:1-062-109-9222"><i class="bi-telephone-inbound-fill me-1"></i> +1 (062) 109-9222</a></li>
+          </ul>
+          <!-- End List -->
+        
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm mb-7 mb-sm-0">
+          <h5 class="mb-3">Company</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-secondary" href="#">About</a></li>
+            <li><a class="link-sm link-secondary" href="#">Careers <span class="badge bg-warning text-dark rounded-pill ms-1">We're hiring</span></a></li>
+            <li><a class="link-sm link-secondary" href="#">Blog</a></li>
+            <li><a class="link-sm link-secondary" href="#">Customers <i class="bi-box-arrow-up-right small ms-1"></i></a></li>
+            <li><a class="link-sm link-secondary" href="#">Hire us</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm mb-7 mb-sm-0">
+          <h5 class="mb-3">Features</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-secondary" href="#">Press <i class="bi-box-arrow-up-right small ms-1"></i></a></li>
+            <li><a class="link-sm link-secondary" href="#">Release Notes</a></li>
+            <li><a class="link-sm link-secondary" href="#">Integrations</a></li>
+            <li><a class="link-sm link-secondary" href="#">Pricing</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm">
+          <h5 class="mb-3">Documentation</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-0">
+            <li><a class="link-sm link-secondary" href="#">Support</a></li>
+            <li><a class="link-sm link-secondary" href="#">Docs</a></li>
+            <li><a class="link-sm link-secondary" href="#">Status</a></li>
+            <li><a class="link-sm link-secondary" href="#">API Reference</a></li>
+            <li><a class="link-sm link-secondary" href="#">Tech Requirements</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-sm">
+          <h5 class="mb-3">Resources</h5>
+
+          <!-- List -->
+          <ul class="list-unstyled list-py-1 mb-5">
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-question-circle-fill me-1"></i> Help</a></li>
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-person-circle me-1"></i> Your Account</a></li>
+          </ul>
+          <!-- End List -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <div class="border-top my-7"></div>
+
+      <div class="row mb-7">
+        <div class="col-sm mb-3 mb-sm-0">
+          <!-- Socials -->
+          <ul class="list-inline list-separator mb-0">
+            <li class="list-inline-item">
+              <a class="text-body" href="#">Privacy &amp; Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-body" href="#">Terms</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-body" href="#">Site Map</a>
+            </li>
+          </ul>
+          <!-- End Socials -->
+        </div>
+
+        <div class="col-sm-auto">
+          <!-- Socials -->
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
+                <i class="bi-facebook"></i>
+              </a>
+            </li>
+          
+            <li class="list-inline-item">
+              <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
+                <i class="bi-google"></i>
+              </a>
+            </li>
+          
+            <li class="list-inline-item">
+              <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
+                <i class="bi-twitter"></i>
+              </a>
+            </li>
+          
+            <li class="list-inline-item">
+              <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
+                <i class="bi-github"></i>
+              </a>
+            </li>
+          
+            <li class="list-inline-item">
+              <!-- Button Group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-soft-secondary btn-xs dropdown-toggle" id="footerSelectLanguage" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>
+                  <span class="d-flex align-items-center">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/>
+                    <span>English (US)</span>
+                  </span>
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="footerSelectLanguage">
+                  <a class="dropdown-item d-flex align-items-center active" href="#">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/>
+                    <span>English (US)</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="./assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Image description" width="16"/>
+                    <span>Deutsch</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="./assets/vendor/flag-icon-css/flags/1x1/es.svg" alt="Image description" width="16"/>
+                    <span>Español</span>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="./assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Image description" width="16"/>
+                    <span>中文 (繁體)</span>
+                  </a>
+                </div>
+              </div>
+              <!-- End Button Group -->
+            </li>
+          </ul>
+          <!-- End Socials -->
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="w-md-85 text-lg-center mx-lg-auto">
+        <p class="text-muted small">&copy; Front. 2021 Htmlstream. All rights reserved.</p>
+        <p class="text-muted small">When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
+      </div>
+      <!-- End Copyright -->
+    </div>
+  </footer>
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
   <!-- Sign Up -->
-  @@include("@@autopath/partials/modal/signup.html")
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- Header -->
+        <div class="modal-close">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- End Header -->
+
+        <!-- Body -->
+        <div class="modal-body">
+          <!-- Log in -->
+          <div id="signupModalFormLogin" style="display: none; opacity: 0;">
+            <!-- Heading -->
+            <div class="text-center mb-7">
+              <h2>Log in</h2>
+              <p>Don't have an account yet?
+                <a class="js-animation-link link" href="javascript:;" role="button"
+                   data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormSignup",
+                         "groupName": "idForm"
+                       }'>Sign up</a>
+              </p>
+            </div>
+            <!-- End Heading -->
+
+            <div class="d-grid gap-2">
+              <a class="btn btn-white btn-lg" href="#">
+                <span class="d-flex justify-content-center align-items-center">
+                  <img class="avatar avatar-xss me-2" src="./assets/svg/brands/google-icon.svg" alt="Image Description">
+                  Log in with Google
+                </span>
+              </a>
+
+              <a class="js-animation-link btn btn-primary btn-lg" href="#"
+                 data-hs-show-animation-options='{
+                       "targetSelector": "#signupModalFormLoginWithEmail",
+                       "groupName": "idForm"
+                     }'>Log in with Email</a>
+            </div>
+          </div>
+          <!-- End Log in -->
+
+          <!-- Log in with Modal -->
+          <div id="signupModalFormLoginWithEmail" style="display: none; opacity: 0;">
+            <!-- Heading -->
+            <div class="text-center mb-7">
+              <h2>Log in</h2>
+              <p>Don't have an account yet?
+                <a class="js-animation-link link" href="javascript:;" role="button"
+                   data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormSignup",
+                         "groupName": "idForm"
+                       }'>Sign up</a>
+              </p>
+            </div>
+            <!-- End Heading -->
+
+            <form class="js-validate needs-validation" novalidate>
+              <!-- Form -->
+              <div class="mb-3">
+                <label class="form-label" for="signupModalFormLoginEmail">Your email</label>
+                <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormLoginEmail" placeholder="email@site.com" aria-label="email@site.com" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+              </div>
+              <!-- End Form -->
+
+              <!-- Form -->
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="form-label" for="signupModalFormLoginPassword">Password</label>
+
+                  <a class="js-animation-link form-label-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                       "targetSelector": "#signupModalFormResetPassword",
+                       "groupName": "idForm"
+                     }'>Forgot Password?</a>
+                </div>
+
+                <input type="password" class="form-control form-control-lg" name="password" id="signupModalFormLoginPassword" placeholder="8+ characters required" aria-label="8+ characters required" required minlength="8">
+                <span class="invalid-feedback">Please enter a valid password.</span>
+              </div>
+              <!-- End Form -->
+
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary form-control-lg">Log in</button>
+              </div>
+            </form>
+          </div>
+          <!-- End Log in with Modal -->
+
+          <!-- Sign up -->
+          <div id="signupModalFormSignup">
+            <!-- Heading -->
+            <div class="text-center mb-7">
+              <h2>Sign up</h2>
+              <p>Already have an account?
+                <a class="js-animation-link link" href="javascript:;" role="button"
+                   data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormLogin",
+                         "groupName": "idForm"
+                       }'>Log in</a>
+              </p>
+            </div>
+            <!-- End Heading -->
+
+            <div class="d-grid gap-3">
+              <a class="btn btn-white btn-lg" href="#">
+                <span class="d-flex justify-content-center align-items-center">
+                  <img class="avatar avatar-xss me-2" src="./assets/svg/brands/google-icon.svg" alt="Image Description">
+                  Sign up with Google
+                </span>
+              </a>
+
+              <a class="js-animation-link btn btn-primary btn-lg" href="#"
+                 data-hs-show-animation-options='{
+                       "targetSelector": "#signupModalFormSignupWithEmail",
+                       "groupName": "idForm"
+                     }'>Sign up with Email</a>
+
+              <div class="text-center">
+                <p class="small mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- End Sign up -->
+
+          <!-- Sign up with Modal -->
+          <div id="signupModalFormSignupWithEmail" style="display: none; opacity: 0;">
+            <!-- Heading -->
+            <div class="text-center mb-7">
+              <h2>Sign up</h2>
+              <p>Already have an account?
+                <a class="js-animation-link link" href="javascript:;" role="button"
+                   data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormLogin",
+                         "groupName": "idForm"
+                       }'>Log in</a>
+              </p>
+            </div>
+            <!-- End Heading -->
+
+            <form class="js-validate need-validate" novalidate>
+              <!-- Form -->
+              <div class="mb-3">
+                <label class="form-label" for="signupModalFormSignupEmail">Your email</label>
+                <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormSignupEmail" placeholder="email@site.com" aria-label="email@site.com" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+              </div>
+              <!-- End Form -->
+
+              <!-- Form -->
+              <div class="mb-3">
+                <label class="form-label" for="signupModalFormSignupPassword">Password</label>
+                <input type="password" class="form-control form-control-lg" name="password" id="signupModalFormSignupPassword" placeholder="8+ characters required" aria-label="8+ characters required" required>
+                <span class="invalid-feedback">Your password is invalid. Please try again.</span>
+              </div>
+              <!-- End Form -->
+
+              <!-- Form -->
+              <div class="mb-3" data-hs-validation-validate-class>
+                <label class="form-label" for="signupModalFormSignupConfirmPassword">Confirm password</label>
+                <input type="password" class="form-control form-control-lg" name="confirmPassword" id="signupModalFormSignupConfirmPassword" placeholder="8+ characters required" aria-label="8+ characters required" required
+                       data-hs-validation-equal-field="#signupModalFormSignupPassword">
+                <span class="invalid-feedback">Password does not match the confirm password.</span>
+              </div>
+              <!-- End Form -->
+
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary form-control-lg">Sign up</button>
+              </div>
+
+              <div class="text-center">
+                <p class="small mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+              </div>
+            </form>
+          </div>
+          <!-- End Sign up with Modal -->
+
+          <!-- Reset Password -->
+          <div id="signupModalFormResetPassword" style="display: none; opacity: 0;">
+            <!-- Heading -->
+            <div class="text-center mb-7">
+              <h2>Forgot password?</h2>
+              <p>Enter the email address you used when you joined and we'll send you instructions to reset your password.</p>
+            </div>
+            <!-- En dHeading -->
+
+            <form class="js-validate need-validate" novalidate>
+              <div class="mb-3">
+                <!-- Form -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <label class="form-label" for="signupModalFormResetPasswordEmail" tabindex="0">Your email</label>
+
+                  <a class="js-animation-link form-label-link" href="javascript:;"
+                     data-hs-show-animation-options='{
+                         "targetSelector": "#signupModalFormLogin",
+                         "groupName": "idForm"
+                       }'>
+                    <i class="bi-chevron-left small"></i> Back to Log in
+                  </a>
+                </div>
+
+                <input type="email" class="form-control form-control-lg" name="email" id="signupModalFormResetPasswordEmail" tabindex="1" placeholder="Enter your email address" aria-label="Enter your email address" required>
+                <span class="invalid-feedback">Please enter a valid email address.</span>
+                <!-- End Form -->
+              </div>
+            
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary form-control-lg">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- End Reset Password -->
+        </div>
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <div class="modal-footer d-block text-center py-sm-5">
+          <small class="text-cap mb-4">Trusted by the world's best teams</small>
+
+          <div class="w-85 mx-auto">
+            <div class="row justify-content-between">
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/gitlab-gray.svg" alt="Logo">
+              </div>
+              <!-- End Col -->
+
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/fitbit-gray.svg" alt="Logo">
+              </div>
+              <!-- End Col -->
+
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/flow-xo-gray.svg" alt="Logo">
+              </div>
+              <!-- End Col -->
+
+              <div class="col">
+                <img class="img-fluid" src="./assets/svg/brands/layar-gray.svg" alt="Logo">
+              </div>
+              <!-- End Col -->
+            </div>
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </div>
 
   <!-- Go To -->
-  @@include("@@autopath/partials/layouts-components/go-to.html")
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
   <!-- ========== END SECONDARY CONTENTS ========== -->
 
-  <!-- JS Global Compulsory @@deleteLine:build -->
-  <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Global Compulsory  -->
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- JS Implementing Plugins -->
-  <!-- bundlejs:vendor [@@autopath] -->
-  <script src="@@autopath/assets/vendor/hs-header/dist/hs-header.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
-  <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-  <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+  <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="./assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="./assets/vendor/aos/dist/aos.js"></script>
+  <script src="./assets/vendor/typed.js/lib/typed.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- JS Front -->
-  <!-- bundlejs:theme [@@autopath] -->
-  <script src="@@autopath/assets/js/hs.core.js"></script>
-  <script src="@@autopath/assets/js/hs.bs-dropdown.js"></script>
-  <script src="@@autopath/assets/js/hs.bs-validation.js"></script>
+  <script src="./assets/js/theme.min.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -683,6 +1014,49 @@
         duration: 650,
         once: true
       });
+
+
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      HSCore.components.HSTyped.init('.js-typedjs')
+
+
+      // INITIALIZATION OF SWIPER
+      // =======================================================
+      var sliderThumbs = new Swiper('.js-swiper-thumbs', {
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        history: false,
+        breakpoints: {
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        },
+        on: {
+          'afterInit': function (swiper) {
+            swiper.el.querySelectorAll('.js-swiper-pagination-progress-body-helper')
+            .forEach($progress => $progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`)
+          }
+        }
+      });
+
+      var sliderMain = new Swiper('.js-swiper-main', {
+        effect: 'fade',
+        autoplay: true,
+        loop: true,
+        thumbs: {
+          swiper: sliderThumbs
+        }
+      })
     })()
   </script>
 </body>
